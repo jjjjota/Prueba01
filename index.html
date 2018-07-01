@@ -22,7 +22,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- GoogleFonts: Raleway light & Open Sans -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300" rel="stylesheet"/>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
@@ -33,7 +33,7 @@
 <body>
 
   <!-- NAVBAR ------------------------------------------------------------------------------------->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar--fundacion navbar navbar-fixed-top">
     <div class="container-fluid">
 
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,15 +44,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="" src="" alt="Logo Fundación Niño y Cáncer"></a>
+        <a class="navbar-brand" href="index.html"><img class="navbar__brand" src="assets/img/logo.png" alt="Logo Fundación Niño y Cáncer"></a>
+        <p class="navbar__brandname navbar__brandname--hidden">Fundación Niño y Cáncer</p>
       </div> <!-- /.navbar-header -->
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Noticias</a></li>
+        <ul class="navbar__navigation nav navbar-nav navbar-right">
+          <li><a class="navbar__link navbar__link--active" href="index.html">Home</a></li>
+          <li><a class="navbar__link" href="nosotros.html">Nosotros</a></li>
+          <li><a class="navbar__link" href="noticias.html">Noticias</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
 
