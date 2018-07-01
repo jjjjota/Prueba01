@@ -1,0 +1,4 @@
+/node_modules
+/assets/scss
+*.json
+*.js
