@@ -87,6 +87,7 @@ body {
 }
 
 .blog__header {
+  margin-bottom: 50px;
   border-bottom: 10px solid #FF6600;
   padding-bottom: 10px;
   text-align: center;
@@ -100,7 +101,7 @@ body {
 
 .blog__inner {
   margin-right: 20px;
-  height: 520px;
+  height: 480px;
   -webkit-box-shadow: 0 0 10px #737385;
           box-shadow: 0 0 10px #737385;
   text-align: center;
@@ -111,8 +112,8 @@ body {
   height: auto;
 }
 
-.blog__inner .blog__webpaylogo {
-  height: 65px;
+.blog__inner .blog__img--webpaylogo {
+  height: 60px;
 }
 
 .blog__inner .blog__info {
@@ -120,13 +121,22 @@ body {
 }
 
 .blog__inner h1 {
+  margin-bottom: 15px;
   font-size: 1.3em;
   font-weight: 600;
   color: #FF6600;
 }
 
+.blog__link--news {
+  color: #FF6600;
+}
+
+.blog__link--news:hover {
+  color: #FF6600;
+}
+
 @media only screen and (max-width: 576px) {
-  .blog__webpaylogo {
+  .blog__inner .blog__img--webpaylogo {
     width: 90%;
     height: auto;
   }
