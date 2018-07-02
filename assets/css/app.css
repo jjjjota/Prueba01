@@ -43,8 +43,7 @@ body {
   color: #000073;
 }
 
-.navbar--fundacion .navbar__link:hover,
-.navbar--fundacion .navbar__link--active {
+.navbar--fundacion .navbar__link:hover, .navbar--fundacion .navbar__link--active {
   color: #FF6600;
   background-color: #F0F0F0;
 }
@@ -55,3 +54,30 @@ body {
   }
 }
 
+.header {
+  margin-top: 50px;
+  padding: 0;
+  height: 60vh;
+}
+
+.header__slice {
+  height: 100%;
+}
+
+.header__slice--first {
+  background-image: url(../img/futbolitoppa2018.png);
+  background-size: cover;
+  background-position: center top;
+}
+
+.header__slice--second {
+  background-image: url(../img/voluntarias_stgo.JPG);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.header__slice--third {
+  background-image: url(../img/angeles.jpg);
+  background-size: cover;
+  background-position: right bottom;
+}
