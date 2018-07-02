@@ -5,8 +5,8 @@ body {
 
 .navbar--fundacion {
   background-color: #FAFAFA;
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px #737385;
+          box-shadow: 0 0 10px #737385;
 }
 
 .navbar--fundacion .navbar__brand {
@@ -20,6 +20,10 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #000073;
+}
+
+.navbar--fundacion .navbar__brandname:hover {
+  text-decoration: none;
 }
 
 .navbar--fundacion .navbar-toggle {
@@ -47,7 +51,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .navbar__brandname--hidden {
-    visibility: hidden;
+    display: none;
   }
 }
 
