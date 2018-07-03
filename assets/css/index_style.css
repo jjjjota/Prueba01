@@ -1,7 +1,7 @@
 .header {
   margin-top: 50px;
   padding: 0;
-  height: 60vh;
+  height: 70vh;
 }
 
 .header__slice {
@@ -28,6 +28,7 @@
 
 .blog {
   padding: 70px 15vw;
+  background-image: url(../img/trama_l.gif);
 }
 
 .blog__header {
@@ -78,7 +79,19 @@
   color: #FF6600;
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .blog__inner {
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
+  .blog__inner {
+    height: auto;
+  }
   .blog__inner .blog__img--webpaylogo {
     width: 90%;
     height: auto;
