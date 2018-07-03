@@ -3,18 +3,16 @@
   margin-right: 25vw;
 }
 
-.header {
-  margin-top: 80px;
-  border-bottom: 10px solid #FF6600;
-}
-
-.header h1 {
-  text-align: center;
-  color: #000073;
-}
-
 .blog {
   padding: 50px 0;
+}
+
+.blog__header {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border-bottom: 10px solid #FF6600;
+  text-align: center;
+  color: #000073;
 }
 
 .blog__inner {
@@ -50,6 +48,9 @@
 }
 
 .blog__fecha {
+  position: relative;
+  left: 50%;
+  margin-left: -30px;
   color: #000073;
   font-style: italic;
   font-size: 0.8em;
