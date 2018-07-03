@@ -59,9 +59,18 @@
   font-size: 0.85em;
 }
 
+@media (min-width: 992px) {
+  .header__inner {
+    padding-top: 5%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .container--nosotros {
     margin: 0px 15vw;
+  }
+  .header__inner {
+    padding-top: 10%;
   }
 }
 
@@ -70,18 +79,19 @@
     margin: 0px 10vw;
   }
   .header__inner {
+    padding-top: 5%;
     height: auto;
   }
   .header__inner--background {
     height: 40vh;
   }
   .header h1, .organization h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .container--nosotros {
-    margin: 0px 5vw;
+    margin: 0 0;
   }
 }
