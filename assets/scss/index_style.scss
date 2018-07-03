@@ -1,0 +1,97 @@
+// HEADER
+.header {
+  margin-top: 50px;
+  padding: 0;
+  height: 70vh;
+
+  &__slice {
+    height: 100%;
+
+    &--first {
+      background-image: url(../img/futbolitoppa2018.png);
+      background-size: cover;
+      background-position: center top;
+    }
+
+    &--second {
+      background-image: url(../img/voluntarias_stgo.JPG);
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    &--third {
+      background-image: url(../img/angeles.jpg);
+      background-size: cover;
+      background-position: right bottom;
+    }
+  }
+}
+
+// BLOG
+.blog {
+  padding: 70px 15vw;
+  background-image: url(../img/trama_l.gif);
+
+  &__header {
+    margin-bottom: 50px;
+    border-bottom: 10px solid #FF6600;
+    padding-bottom: 10px;
+
+    text-align: center;
+    color: #000073;
+  }
+
+  .thumbnail {
+    border: none;
+  }
+
+  &__inner {
+    margin-right: 20px;
+    height: 480px;
+
+    box-shadow: 0 0 10px #737385;
+    text-align: center;
+
+    .blog__img {
+      width: 100%;
+      height: auto;
+    }
+
+    .blog__img--webpaylogo {
+      height: 60px;
+    }
+
+    .blog__info {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #FF6600;
+    }
+  }
+
+  &__link--news {
+    color: #FF6600;
+
+    &:hover {
+      color: #FF6600;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .blog__inner {
+    height: auto;
+    .blog__img--webpaylogo {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
