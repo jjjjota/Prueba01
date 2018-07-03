@@ -5,7 +5,7 @@
 }
 
 .header__slice {
-  height: 100%;
+  height: 70vh;
 }
 
 .header__slice--first {
@@ -28,7 +28,6 @@
 
 .blog {
   padding: 70px 15vw;
-  background-image: url(../img/trama_l.gif);
 }
 
 .blog__header {
