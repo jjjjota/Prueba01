@@ -99,8 +99,16 @@ h1 {
 
   &__inner {
     box-sizing: border-box;
-    margin: 50px 0;
     padding: 0 15vw;
+
+    &--left {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+
+    &--right {
+      margin-bottom: 70px;
+    }
   }
 
   &__icon {
@@ -158,8 +166,15 @@ h1 {
     &__inner {
       box-sizing: border-box;
 
-      &--left {padding: 0 4vw 0 15vw;}
-      &--right {padding: 0 15vw 0 0;}
+      &--left {
+        margin-top: 50px;
+        padding: 0 4vw 0 15vw;
+      }
+
+      &--right {
+        margin-top: 50px;
+        padding: 0 15vw 0 0;
+      }
     }
   }
 }
