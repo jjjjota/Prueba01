@@ -27,8 +27,8 @@
   }
 }
 
-// BLOG
-.blog {
+// NEWS
+.news {
   padding: 70px 10vw;
 
   &__header {
@@ -108,7 +108,7 @@
 
 // BREAKPOINTS
 @media only screen and (min-width: 768px) {
-  .blog {
+  .news {
     padding: 70px 10vw;
 
     &__inner {
@@ -128,7 +128,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .blog {
+  .news {
     padding: 70px 15vw;
 
     &__inner {
@@ -148,7 +148,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .blog {
+  .news {
     padding: 70px 15vw;
 
     &__inner {
