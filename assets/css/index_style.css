@@ -38,55 +38,64 @@
   color: #000073;
 }
 
-.blog .thumbnail {
-  border: none;
-}
-
 .blog__inner {
-  margin-right: 20px;
-  height: 480px;
-  -webkit-box-shadow: 0 0 10px #737385;
-          box-shadow: 0 0 10px #737385;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 300px;
+  background-size: cover;
   text-align: center;
 }
 
-.blog__inner .blog__img {
-  width: 100%;
-  height: auto;
-}
-
-.blog__inner .blog__img--webpaylogo {
-  height: 60px;
-}
-
-.blog__inner .blog__info {
-  padding: 20px;
+.blog__inner p {
+  display: none;
 }
 
 .blog__inner h2 {
-  margin-bottom: 15px;
+  margin-top: 45%;
   font-size: 1.3em;
   font-weight: 600;
-  color: #FF6600;
+  color: #FFDD6F;
 }
 
-.blog__link--news {
-  color: #FF6600;
+.blog__inner:hover p {
+  display: inherit;
+  margin-top: 45%;
 }
 
-.blog__link--news:hover {
-  color: #FF6600;
+.blog__inner:hover h2 {
+  display: none;
+}
+
+.blog__inner--first {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/renovacion.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/renovacion.gif);
+}
+
+.blog__inner--second {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/coronas.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/coronas.jpg);
+}
+
+.blog__inner--third {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/manual_padres.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/manual_padres.jpg);
+}
+
+.blog__inner--fourth {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/donacion.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/donacion.gif);
+}
+
+.blog__link {
+  color: #EAEDFF;
+}
+
+.blog__link:hover {
+  color: #EAEDFF;
 }
 
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 2em;
-  }
-  .blog__inner {
-    height: auto;
-  }
-  .blog__inner .blog__img--webpaylogo {
-    width: 80%;
-    height: auto;
   }
 }

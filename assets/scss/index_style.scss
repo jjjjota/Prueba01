@@ -40,43 +40,58 @@
     color: #000073;
   }
 
-  .thumbnail {
-    border: none;
-  }
-
   &__inner {
-    margin-right: 20px;
-    height: 480px;
+    box-sizing: border-box;
+    height: 300px;
 
-    box-shadow: 0 0 10px #737385;
+    background-size: cover;
+    // box-shadow: 0 0 10px #737385;
     text-align: center;
 
-    .blog__img {
-      width: 100%;
-      height: auto;
-    }
-
-    .blog__img--webpaylogo {
-      height: 60px;
-    }
-
-    .blog__info {
-      padding: 20px;
+    p {
+      display: none;
     }
 
     h2 {
-      margin-bottom: 15px;
+      margin-top: 45%;
       font-size: 1.3em;
       font-weight: 600;
-      color: #FF6600;
+      color: #FFDD6F;
+    }
+
+    &:hover {
+      p {
+        display: inherit;
+        margin-top: 45%;
+      }
+
+      h2 {
+        display: none;
+      }
+    }
+
+    &--first {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/renovacion.gif);
+    }
+
+    &--second {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/coronas.jpg);
+    }
+
+    &--third {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/manual_padres.jpg);
+    }
+
+    &--fourth {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/donacion.gif);
     }
   }
 
-  &__link--news {
-    color: #FF6600;
+  &__link {
+    color: #EAEDFF;
 
     &:hover {
-      color: #FF6600;
+      color: #EAEDFF;
     }
   }
 }
@@ -84,13 +99,5 @@
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 2em;
-  }
-
-  .blog__inner {
-    height: auto;
-    .blog__img--webpaylogo {
-      width: 80%;
-      height: auto;
-    }
   }
 }
