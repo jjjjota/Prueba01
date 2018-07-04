@@ -51,6 +51,10 @@
     color: #FF524A;
   }
 
+  ul {
+    list-style: none;
+  }
+
   &__inner {
     border: 1px solid #FFDD6F;
     border-bottom: 10px solid #FFDD6F;
@@ -64,6 +68,14 @@
     margin-top: 20px;
 
     font-size: 0.75em;
+  }
+
+  &__link {
+    color: inherit;
+
+    &:hover {
+      color: #575991;
+    }
   }
 }
 
