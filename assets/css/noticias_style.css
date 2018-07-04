@@ -1,36 +1,26 @@
-.container--blog {
-  margin-left: 25vw;
-  margin-right: 25vw;
-}
-
 .blog {
-  padding: 50px 0;
+  padding: 70px 0vw 0px 0vw;
+  background-color: #FAFAFA;
+  color: #FAFAFA;
 }
 
-.blog__header {
-  margin-top: 80px;
-  margin-bottom: 30px;
-  border-bottom: 10px solid #FF6600;
-  text-align: center;
-  color: #000073;
+.blog h1 {
+  margin: 30px 0;
+  font-size: 2em;
+  color: #FAFAFA;
+  text-shadow: 1px 1px #575991, 2px 2px #575991;
+}
+
+.blog h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #575991;
 }
 
 .blog__inner {
-  padding: 0 20px 30px 20px;
-  border-top: 5px solid #CDE6FF;
-  background-color: #FFF;
-}
-
-.blog__inner h1 {
-  margin-bottom: 20px;
-  font-size: 2em;
-  color: #FF6600;
-}
-
-.blog__inner h2 {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #000073;
+  margin-bottom: 15px;
+  padding: 0 15vw 50px 15vw;
+  background-color: #FF524A;
 }
 
 .blog__triangle {
@@ -40,7 +30,7 @@
   top: 0;
   left: 50%;
   margin-left: -15px;
-  border-top: 30px solid #CDE6FF;
+  border-top: 30px solid #FAFAFA;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   width: 30px;
@@ -50,8 +40,9 @@
 .blog__fecha {
   position: relative;
   left: 50%;
+  top: 10px;
   margin-left: -30px;
-  color: #000073;
+  color: #FFDD6F;
   font-style: italic;
   font-size: 0.8em;
 }
@@ -68,21 +59,62 @@
   height: auto;
 }
 
+.blog__link {
+  color: #575991;
+}
+
+.blog__link:hover {
+  color: #FFDD6F;
+}
+
 .blog__text--thanks {
-  padding-left: 15px;
+  font-size: 0.9em;
+  padding-left: 10px;
   font-style: italic;
 }
 
-@media only screen and (max-width: 768px) {
-  .container--blog {
-    margin-left: 10vw;
-    margin-right: 10vw;
+@media only screen and (min-width: 576px) {
+  .blog {
+    padding: 70px 20vw 0px 20vw;
+  }
+  .blog__inner {
+    padding: 0 10vw 50px 10vw;
+    border-radius: 30px 0;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .container--blog {
-    margin-left: 5vw;
-    margin-right: 5vw;
+@media only screen and (min-width: 768px) {
+  .blog {
+    padding: 70px 20vw 0px 20vw;
+  }
+  .blog h1 {
+    font-size: 2.5em;
+  }
+  .blog__inner {
+    padding: 0 7vw 50px 7vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog {
+    padding: 70px 25vw 0px 25vw;
+  }
+  .blog h1 {
+    font-size: 2.5em;
+  }
+  .blog__inner {
+    padding: 0 7vw 50px 7vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .blog {
+    padding: 70px 30vw 0px 30vw;
+  }
+  .blog h1 {
+    font-size: 2.5em;
+  }
+  .blog__inner {
+    padding: 0 7vw 50px 7vw;
   }
 }
