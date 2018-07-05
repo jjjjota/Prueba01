@@ -26,7 +26,7 @@ $yellow: #ffdf80;
 
     &--background {
       height: 35vh;
-      background: url(../img/reunion.jpg);
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/reunion.jpg);
       background-size: cover;
       background-position: center center;
     }
@@ -95,9 +95,16 @@ $yellow: #ffdf80;
     h1 {
       font-size: 3.5em;
     }
+
     &__inner {
       height: 450px;
-      padding: 50px 10vw 0px 50px;
+
+      &--text {
+        margin: 40px 0;
+        padding: 0 40px;
+        max-width: 550px;
+        height: auto;
+      }
     }
   }
 
@@ -125,8 +132,11 @@ $yellow: #ffdf80;
 @media only screen and (min-width: 992px) {
   .header {
     &__inner {
-      padding: 50px 15vw 0px 50px;
-      height: 460px;
+      &--text {
+        padding: 0;
+        margin: 70px 0;
+        margin-left: 2vw;
+      }
     }
   }
 
@@ -142,7 +152,10 @@ $yellow: #ffdf80;
 @media only screen and (min-width: 1200px) {
   .header {
     &__inner {
-      padding: 90px 15vw 0px 70px;
+      &--text {
+        margin: 70px 0;
+        margin-left: 3vw;
+      }
     }
   }
 

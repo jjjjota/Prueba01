@@ -14,7 +14,6 @@ $yellow: #ffdf80;
     margin: 1em 0;
     font-size: 3em;
     color: $orange;
-    // text-shadow: 1px 1px #444, 2px 2px #444;
   }
 
   h2 {
@@ -59,6 +58,7 @@ $yellow: #ffdf80;
 
   &__img {
     margin: 15px 0;
+    border-radius: 5px;
     width: 100%;
     height: auto;
 
