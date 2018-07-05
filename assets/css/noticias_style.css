@@ -1,26 +1,30 @@
 .blog {
-  padding: 70px 0vw 0px 0vw;
-  background-color: #FAFAFA;
-  color: #FAFAFA;
+  margin: 70px 0;
+  background-color: white;
+  color: white;
 }
 
 .blog h1 {
-  margin: 30px 0;
-  font-size: 2em;
-  color: #FAFAFA;
-  text-shadow: 1px 1px #575991, 2px 2px #575991;
+  margin: 1em 0;
+  font-size: 3em;
+  color: #ff4040;
 }
 
 .blog h2 {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #575991;
+  margin: 1.5em 0;
+  font-size: 1.25em;
+  color: #ff8080;
+}
+
+.blog p {
+  margin: 1.5em 0;
+  line-height: 1.5em;
 }
 
 .blog__inner {
   margin-bottom: 15px;
   padding: 0 15vw 50px 15vw;
-  background-color: #FF524A;
+  background-color: #001040;
 }
 
 .blog__triangle {
@@ -30,7 +34,7 @@
   top: 0;
   left: 50%;
   margin-left: -15px;
-  border-top: 30px solid #FAFAFA;
+  border-top: 30px solid white;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   width: 30px;
@@ -38,13 +42,11 @@
 }
 
 .blog__fecha {
-  position: relative;
-  left: 50%;
-  top: 10px;
-  margin-left: -30px;
-  color: #FFDD6F;
+  padding-top: 0.25em;
+  text-align: center;
+  color: #ffdf80;
+  font-size: 1em;
   font-style: italic;
-  font-size: 0.8em;
 }
 
 .blog__img {
@@ -60,22 +62,24 @@
 }
 
 .blog__link {
-  color: #575991;
+  color: #ffdf80;
 }
 
 .blog__link:hover {
-  color: #FFDD6F;
+  color: #ffdf80;
 }
 
 .blog__text--thanks {
-  font-size: 0.9em;
+  margin-left: 5px;
+  border-left: 2px solid #384467;
   padding-left: 10px;
+  font-size: 0.9em;
   font-style: italic;
 }
 
 @media only screen and (min-width: 576px) {
   .blog {
-    padding: 70px 20vw 0px 20vw;
+    margin: 70px 20vw;
   }
   .blog__inner {
     padding: 0 10vw 50px 10vw;
@@ -85,7 +89,7 @@
 
 @media only screen and (min-width: 768px) {
   .blog {
-    padding: 70px 20vw 0px 20vw;
+    margin: 70px 20vw;
   }
   .blog h1 {
     font-size: 2.5em;
@@ -97,7 +101,7 @@
 
 @media only screen and (min-width: 992px) {
   .blog {
-    padding: 70px 25vw 0px 25vw;
+    margin: 70px 25vw;
   }
   .blog h1 {
     font-size: 2.5em;
@@ -109,7 +113,7 @@
 
 @media only screen and (min-width: 1200px) {
   .blog {
-    padding: 70px 30vw 0px 30vw;
+    margin: 70px 30vw;
   }
   .blog h1 {
     font-size: 2.5em;

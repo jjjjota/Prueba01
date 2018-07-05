@@ -1,16 +1,12 @@
 // COLORS
-// #071033
-// #575991
-// #EAEDFF
-// #FAFAFA
-// #FF524A
-// #FFDD6F
-
+$orange: #ff4040;
+$pale-orange: #ff8080;
+$blue: #001040;
+$pale-blue: #384467;
 
 // GENERAL
 body {
-  background-color: #FAFAFA;
-  color: #071033;
+  color: $blue;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -20,12 +16,12 @@ h1 {
 
 // NAVBAR
 .navbar--fundacion {
+  border-bottom: none;
   background-color: #FAFAFA;
   box-shadow: 0 0 10px #737385;
 
   .navbar__brand {
     height: 100%;
-    margin-left: 5vw;
   }
 
   .navbar__brandname {
@@ -34,7 +30,7 @@ h1 {
 
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color: #071033;
+    color: $blue;
 
     &:hover {
       text-decoration: none;
@@ -42,28 +38,33 @@ h1 {
   }
 
   .navbar-toggle {
-    border-color: #071033;
+    border-color: $blue;
 
     .icon-bar {
-      background-color: #071033;
+      background-color: $blue;
     }
-  }
-
-  .navbar__navigation {
-    margin-right: 5vw;
   }
 
   .navbar__link {
     font-family: 'Raleway', sans-serif;
-    color: #071033;
+    color: $blue;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
 
     &:hover, &--active {
-      color: inherit;
-      background-color: #EAEDFF;
+      color: #FFF;
+      background-color: $pale-orange;
     }
 
     &--dropdown {
       padding: 2px 40px;
+    }
+
+    &--donate {
+      color: #FFF;
+      background-color: $orange;
+
     }
   }
 
@@ -81,8 +82,8 @@ h1 {
 
 // FOOTER
 .footer {
-  background-color: #071033;
-  color: #575991;
+  background-color: $blue;
+  color: $pale-blue;
 
   p, label {
     line-height: 2;
@@ -93,7 +94,7 @@ h1 {
   h1 {
     margin-bottom: 30px;
 
-    color: #FF524A;
+    color: $orange;
     font-size: 2.2em;
   }
 
@@ -118,11 +119,11 @@ h1 {
   }
 
   &__link {
-    color: #575991;
+    color: $pale-blue;
 
     &:hover {
       text-decoration: none;
-      color: #EAEDFF;
+      color: $orange;
     }
   }
 
@@ -130,23 +131,27 @@ h1 {
     margin-top: 20px;
     border: none;
     width: 100%;
-    height: 30%;
+    height: 30vh;
   }
 
   &__formbox {
-    background-color: #575991;
     border: none;
+    background-color: $pale-blue;
+    color: #FFF;
+
+    &::placeholder {
+      color: #bbb;
+    }
   }
 
   &__button {
-    border: 1px solid #575991;
-    background-color: #071033;
-    color: #FF524A;
+    border: 1px solid $orange;
+    background-color: $blue;
+    color: $orange;
 
     &:hover {
-      border-color: #FF524A;
-      background-color: #FF524A;
-      color: #071033;
+      background-color: $orange;
+      color: $blue;
     }
   }
 }

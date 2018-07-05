@@ -1,16 +1,23 @@
+$orange: #ff4040;
+$pale-orange: #ff8080;
+$blue: #001040;
+$alt-blue: #002080;
+$pale-blue: #384467;
+$yellow: #ffdf80;
+
 // HEADER
 .header {
   margin-top: 50px;
-  background-color: #FF524A;
-  color: #EAEDFF;
+  background-color: $blue;
+  color: white;
 
   h1 {
     margin-bottom: 20px;
 
     text-align: center;
     font-size: 2.5em;
-    color: #FFDD6F;
-    text-shadow: 2px 2px #071033, 3px 3px #071033;
+    letter-spacing: 0.1em;
+    color: $yellow;
   }
 
   &__inner {
@@ -31,7 +38,7 @@
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: #FAFAFA;
+  background-color: white;
 }
 
 // ORGANIZATION
@@ -43,12 +50,12 @@
 
     text-align: center;
     font-size: 2.5em;
-    color: #575991;
+    color: $alt-blue;
   }
 
   h2 {
     font-size: 1.7em;
-    color: #FF524A;
+    color: $alt-blue;
   }
 
   ul {
@@ -56,12 +63,12 @@
   }
 
   &__inner {
-    border: 1px solid #FFDD6F;
-    border-bottom: 10px solid #FFDD6F;
+    border: 1px solid $yellow;
+    border-bottom-width:: 10px;
     margin-top: 20px;
     padding: 20px;
 
-    background-color: #FAFAFA;
+    background-color: white;
   }
 
   &__table {
@@ -74,7 +81,7 @@
     color: inherit;
 
     &:hover {
-      color: #575991;
+      color: $alt-blue;
     }
   }
 }
@@ -89,10 +96,8 @@
       font-size: 3.5em;
     }
     &__inner {
-      height: 60vh;
-      padding: 70px 10vw 0px 3vw;
-
-      &--background {height: 60vh;}
+      height: 450px;
+      padding: 50px 10vw 0px 50px;
     }
   }
 
@@ -120,7 +125,8 @@
 @media only screen and (min-width: 992px) {
   .header {
     &__inner {
-      padding: 70px 15vw 0px 8vw;
+      padding: 50px 15vw 0px 50px;
+      height: 460px;
     }
   }
 
@@ -134,6 +140,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .header {
+    &__inner {
+      padding: 90px 15vw 0px 70px;
+    }
+  }
+
   .organization {
     padding: 0 26vw 70px 26vw;
 

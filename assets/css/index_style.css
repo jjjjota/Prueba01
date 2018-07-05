@@ -33,11 +33,11 @@
 .news__header {
   margin-bottom: 50px;
   padding: 10px 30px;
-  background-color: #FF524A;
+  background-color: #ff4040;
   font-size: 3em;
+  letter-spacing: 0.05em;
   text-align: center;
-  color: #FAFAFA;
-  text-shadow: 2px 2px #575991, 3px 3px #575991;
+  color: white;
 }
 
 .news__inner {

@@ -1,15 +1,15 @@
 .header {
   margin-top: 50px;
-  background-color: #FF524A;
-  color: #EAEDFF;
+  background-color: #001040;
+  color: white;
 }
 
 .header h1 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 2.5em;
-  color: #FFDD6F;
-  text-shadow: 2px 2px #071033, 3px 3px #071033;
+  letter-spacing: 0.1em;
+  color: #ffdf80;
 }
 
 .header__inner {
@@ -28,7 +28,7 @@
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: #FAFAFA;
+  background-color: white;
 }
 
 .organization {
@@ -39,12 +39,12 @@
   margin: 0;
   text-align: center;
   font-size: 2.5em;
-  color: #575991;
+  color: #002080;
 }
 
 .organization h2 {
   font-size: 1.7em;
-  color: #FF524A;
+  color: #002080;
 }
 
 .organization ul {
@@ -52,11 +52,11 @@
 }
 
 .organization__inner {
-  border: 1px solid #FFDD6F;
-  border-bottom: 10px solid #FFDD6F;
+  border: 1px solid #ffdf80;
+  border-bottom-width: 10px;
   margin-top: 20px;
   padding: 20px;
-  background-color: #FAFAFA;
+  background-color: white;
 }
 
 .organization__table {
@@ -69,7 +69,7 @@
 }
 
 .organization__link:hover {
-  color: #575991;
+  color: #002080;
 }
 
 @media only screen and (min-width: 768px) {
@@ -77,11 +77,8 @@
     font-size: 3.5em;
   }
   .header__inner {
-    height: 60vh;
-    padding: 70px 10vw 0px 3vw;
-  }
-  .header__inner--background {
-    height: 60vh;
+    height: 450px;
+    padding: 50px 10vw 0px 50px;
   }
   .organization {
     padding: 0 15vw 70px 15vw;
@@ -102,7 +99,8 @@
 
 @media only screen and (min-width: 992px) {
   .header__inner {
-    padding: 70px 15vw 0px 8vw;
+    padding: 50px 15vw 0px 50px;
+    height: 460px;
   }
   .organization {
     padding: 0 20vw 70px 20vw;
@@ -113,6 +111,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .header__inner {
+    padding: 90px 15vw 0px 70px;
+  }
   .organization {
     padding: 0 26vw 70px 26vw;
   }
