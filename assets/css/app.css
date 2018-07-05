@@ -7,6 +7,10 @@ h1 {
   font-family: 'Francois One', sans-serif;
 }
 
+.row {
+  margin: 0;
+}
+
 .navbar--fundacion {
   border-bottom: none;
   background-color: #FAFAFA;
