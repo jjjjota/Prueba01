@@ -79,7 +79,12 @@
   }
   .header__inner {
     height: 450px;
-    padding: 50px 10vw 0px 50px;
+  }
+  .header__inner--text {
+    margin: 40px 0;
+    padding: 0 40px;
+    max-width: 550px;
+    height: auto;
   }
   .organization {
     padding: 0 15vw 70px 15vw;
@@ -99,9 +104,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .header__inner {
-    padding: 50px 15vw 0px 50px;
-    height: 460px;
+  .header__inner--text {
+    padding: 0;
+    margin: 70px 0;
+    margin-left: 2vw;
   }
   .organization {
     padding: 0 20vw 70px 20vw;
@@ -112,8 +118,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .header__inner {
-    padding: 90px 15vw 0px 70px;
+  .header__inner--text {
+    margin: 70px 0;
+    margin-left: 3vw;
   }
   .organization {
     padding: 0 26vw 70px 26vw;
