@@ -56,13 +56,17 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.075em;
 
-    &:hover, &--active {
+    &:hover, &:active, &:focus, &--active {
       color: #FFF;
       background-color: $pale-orange;
     }
 
     &--dropdown {
-      padding: 2px 40px;
+      padding: 0.5em 41px;
+
+      &:hover {
+        color: $blue;
+      }
     }
 
     &--donate {
@@ -74,7 +78,7 @@ h1 {
 
   .navbar__dropdown {
     border: none;
-    background-color: #FAFAFA;
+    padding: 0;
   }
 }
 
