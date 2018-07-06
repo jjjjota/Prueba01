@@ -32,9 +32,9 @@
 
 .news__header {
   margin-bottom: 50px;
-  padding: 10px 30px;
+  padding: 10px 0;
   background-color: #ff4040;
-  font-size: 3em;
+  font-size: 2.2em;
   letter-spacing: 0.05em;
   text-align: center;
   color: white;
@@ -107,8 +107,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .news {
-    padding: 70px 10vw;
+  .news__header {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .news__header {
+    font-size: 3em;
   }
   .news__inner {
     height: 250px;
