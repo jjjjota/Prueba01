@@ -38,10 +38,10 @@ $pale-blue: #384467;
 
   &__header {
     margin-bottom: 50px;
-    padding: 10px 30px;
+    padding: 10px 0;
 
     background-color: $orange;
-    font-size: 3em;
+    font-size: 2.2em;
     letter-spacing: 0.05em;
     text-align: center;
     color: white;
@@ -114,7 +114,18 @@ $pale-blue: #384467;
 // BREAKPOINTS
 @media only screen and (min-width: 768px) {
   .news {
-    padding: 70px 10vw;
+    &__header {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .news {
+
+    &__header {
+      font-size: 3em;
+    }
 
     &__inner {
       height: 250px;
